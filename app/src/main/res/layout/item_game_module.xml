@@ -110,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:fontFamily="@font/roboto_regular"
+            android:fontFamily="sans-serif"
             android:gravity="center"
             android:maxLines="2"
             android:text="@string/module_counting_desc"
@@ -155,7 +155,7 @@
                     android:id="@+id/tv_difficulty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="sans-serif"
                     android:text="@string/difficulty_easy"
                     android:textColor="@color/text_tertiary"
                     android:textSize="10sp" />
@@ -182,7 +182,7 @@
                     android:id="@+id/tv_completion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_regular"
+                    android:fontFamily="sans-serif"
                     android:text="0/10"
                     android:textColor="@color/text_tertiary"
                     android:textSize="10sp" />
