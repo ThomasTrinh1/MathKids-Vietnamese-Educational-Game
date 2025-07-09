@@ -20,7 +20,7 @@ jobs:
     - name: 🔧 Setup Gradle
       uses: gradle/gradle-build-action@v2
       with:
-        gradle-version: '8.5'
+        gradle-version: '8.13'
         
     - name: 🧹 Clean project
       run: gradle clean
