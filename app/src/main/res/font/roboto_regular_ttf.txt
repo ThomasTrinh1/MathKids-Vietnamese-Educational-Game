@@ -1,5 +1,0 @@
-# Roboto Regular Font Placeholder
-# This is a placeholder file for roboto_regular.ttf
-# In production, replace this with actual Roboto Regular font file from Google Fonts
-# Download from: https://fonts.google.com/specimen/Roboto
-# File should be named: roboto_regular.ttf
