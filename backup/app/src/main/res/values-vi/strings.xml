@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MathKids - Học Toán Vui Vẻ</string>
+    
+    <!-- Splash Screen -->
+    <string name="welcome_to_mathkids">Chào mừng đến với MathKids</string>
+    <string name="learn_math_fun">Học toán vui vẻ cùng bạn nhỏ!</string>
+    <string name="loading">Đang tải...</string>
+    
+    <!-- Main Screen -->
+    <string name="good_morning">Chào buổi sáng!</string>
+    <string name="good_afternoon">Chào buổi chiều!</string>
+    <string name="good_evening">Chào buổi tối!</string>
+    <string name="your_progress">Tiến độ của bạn</string>
+    <string name="progress_format">%d%% hoàn thành</string>
+    <string name="progress_65_percent">65% hoàn thành</string>
+    <string name="learning_modules">Các môn học</string>
+    <string name="progress">Tiến độ</string>
+    <string name="achievements">Thành tích</string>
+    <string name="settings">Cài đặt</string>
+    <string name="help">Trợ giúp</string>
+    <string name="stars">Sao</string>
+    <string name="streak">Chuỗi ngày</string>
+    
+    <!-- Game Modules -->
+    <string name="module_counting">Học Đếm</string>
+    <string name="module_counting_desc">Học đếm từ 1 đến 20 với các vật thể vui nhộn</string>
+    <string name="module_addition">Phép Cộng</string>
+    <string name="module_addition_desc">Học phép cộng cơ bản với hình ảnh sinh động</string>
+    <string name="module_subtraction">Phép Trừ</string>
+    <string name="module_subtraction_desc">Học phép trừ đơn giản và dễ hiểu</string>
+    <string name="module_number_recognition">Nhận Biết Số</string>
+    <string name="module_number_recognition_desc">Nhận biết và viết các con số từ 0 đến 20</string>
+    
+    <!-- Game Instructions -->
+    <string name="count_the_objects">Đếm các vật thể trên màn hình</string>
+    <string name="choose_correct_answer">Chọn đáp án đúng</string>
+    <string name="tap_the_number">Chạm vào số</string>
+    <string name="solve_the_problem">Giải bài toán</string>
+    <string name="find_missing_number">Tìm số bị thiếu</string>
+    
+    <!-- Feedback Messages -->
+    <string name="correct_answer">Chính xác! Bạn làm rất tốt!</string>
+    <string name="incorrect_answer">Chưa đúng rồi. Hãy thử lại nhé!</string>
+    <string name="excellent_work">Xuất sắc! Bạn thật giỏi!</string>
+    <string name="try_again">Thử lại nào!</string>
+    <string name="well_done">Làm tốt lắm!</string>
+    <string name="good_job">Giỏi quá!</string>
+    <string name="keep_going">Tiếp tục nào!</string>
+    <string name="amazing">Tuyệt vời!</string>
+    
+    <!-- Numbers in Vietnamese -->
+    <string name="number_0">không</string>
+    <string name="number_1">một</string>
+    <string name="number_2">hai</string>
+    <string name="number_3">ba</string>
+    <string name="number_4">bốn</string>
+    <string name="number_5">năm</string>
+    <string name="number_6">sáu</string>
+    <string name="number_7">bảy</string>
+    <string name="number_8">tám</string>
+    <string name="number_9">chín</string>
+    <string name="number_10">mười</string>
+    <string name="number_11">mười một</string>
+    <string name="number_12">mười hai</string>
+    <string name="number_13">mười ba</string>
+    <string name="number_14">mười bốn</string>
+    <string name="number_15">mười lăm</string>
+    <string name="number_16">mười sáu</string>
+    <string name="number_17">mười bảy</string>
+    <string name="number_18">mười tám</string>
+    <string name="number_19">mười chín</string>
+    <string name="number_20">hai mười</string>
+    
+    <!-- Objects -->
+    <string name="apple">quả táo</string>
+    <string name="star">ngôi sao</string>
+    <string name="heart">trái tim</string>
+    <string name="circle">hình tròn</string>
+    <string name="triangle">hình tam giác</string>
+    <string name="square">hình vuông</string>
+    <string name="flower">bông hoa</string>
+    <string name="balloon">quả bóng bay</string>
+    
+    <!-- Math Operations -->
+    <string name="plus">cộng</string>
+    <string name="minus">trừ</string>
+    <string name="equals">bằng</string>
+    <string name="how_much">bao nhiêu</string>
+    
+    <!-- Achievements -->
+    <string name="achievement_counting_master">Bậc Thầy Đếm Số</string>
+    <string name="achievement_counting_master_desc">Hoàn thành 10 bài tập đếm số</string>
+    <string name="achievement_addition_expert">Chuyên Gia Phép Cộng</string>
+    <string name="achievement_addition_expert_desc">Hoàn thành 15 bài tập phép cộng</string>
+    <string name="achievement_subtraction_star">Ngôi Sao Phép Trừ</string>
+    <string name="achievement_subtraction_star_desc">Hoàn thành 15 bài tập phép trừ</string>
+    <string name="achievement_number_detective">Thám Tử Số Học</string>
+    <string name="achievement_number_detective_desc">Nhận biết đúng 20 con số</string>
+    <string name="achievement_daily_learner">Học Sinh Chăm Chỉ</string>
+    <string name="achievement_daily_learner_desc">Học 7 ngày liên tiếp</string>
+    
+    <!-- Settings -->
+    <string name="sound_effects">Hiệu ứng âm thanh</string>
+    <string name="background_music">Nhạc nền</string>
+    <string name="vibration">Rung</string>
+    <string name="speech_rate">Tốc độ nói</string>
+    <string name="difficulty_level">Mức độ khó</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="parental_controls">Kiểm soát của phụ huynh</string>
+    
+    <!-- Difficulty Levels -->
+    <string name="difficulty_very_easy">Rất dễ</string>
+    <string name="difficulty_easy">Dễ</string>
+    <string name="difficulty_medium">Trung bình</string>
+    <string name="difficulty_hard">Khó</string>
+    
+    <!-- Progress Screen -->
+    <string name="total_stars_earned">Tổng số sao đã kiếm</string>
+    <string name="exercises_completed">Bài tập đã hoàn thành</string>
+    <string name="accuracy_rate">Tỷ lệ chính xác</string>
+    <string name="time_spent_learning">Thời gian học tập</string>
+    <string name="favorite_module">Môn học yêu thích</string>
+    
+    <!-- Buttons -->
+    <string name="start">Bắt đầu</string>
+    <string name="continue_game">Tiếp tục</string>
+    <string name="next">Tiếp theo</string>
+    <string name="previous">Trước đó</string>
+    <string name="finish">Hoàn thành</string>
+    <string name="retry">Thử lại</string>
+    <string name="home">Trang chủ</string>
+    <string name="pause">Tạm dừng</string>
+    <string name="resume">Tiếp tục</string>
+    <string name="hint">Gợi ý</string>
+    
+    <!-- Dialog Messages -->
+    <string name="module_locked">Môn học này chưa được mở khóa</string>
+    <string name="unlock_module_message">Hoàn thành môn học trước để mở khóa %s</string>
+    <string name="exit_confirmation">Bạn có muốn thoát khỏi ứng dụng không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="ok">Đồng ý</string>
+    <string name="cancel">Hủy</string>
+    
+    <!-- Help Instructions -->
+    <string name="help_instructions">Chạm vào các môn học để bắt đầu học. Kiếm sao bằng cách trả lời đúng!</string>
+    <string name="counting_help">Đếm tất cả các vật thể trên màn hình và chọn số đúng</string>
+    <string name="addition_help">Cộng hai số lại với nhau và chọn kết quả đúng</string>
+    <string name="subtraction_help">Lấy số lớn trừ đi số nhỏ và chọn kết quả đúng</string>
+    <string name="number_recognition_help">Nhìn vào hình ảnh và chọn số tương ứng</string>
+    
+    <!-- Time and Date -->
+    <string name="minutes">phút</string>
+    <string name="seconds">giây</string>
+    <string name="today">Hôm nay</string>
+    <string name="yesterday">Hôm qua</string>
+    <string name="this_week">Tuần này</string>
+    
+    <!-- Accessibility -->
+    <string name="app_logo">Logo ứng dụng</string>
+    <string name="decorative_star">Ngôi sao trang trí</string>
+    <string name="decorative_heart">Trái tim trang trí</string>
+    <string name="decorative_circle">Hình tròn trang trí</string>
+    
+    <!-- Error Messages -->
+    <string name="error_loading">Lỗi khi tải dữ liệu</string>
+    <string name="error_audio">Lỗi âm thanh</string>
+    <string name="error_save_progress">Không thể lưu tiến độ</string>
+    
+    <!-- Congratulations -->
+    <string name="congratulations">Chúc mừng!</string>
+    <string name="level_completed">Bạn đã hoàn thành cấp độ này!</string>
+    <string name="module_completed">Bạn đã hoàn thành môn học này!</string>
+    <string name="new_achievement">Thành tích mới!</string>
+    
+    <!-- Parent Section -->
+    <string name="parent_dashboard">Bảng điều khiển phụ huynh</string>
+    <string name="child_progress">Tiến độ của con</string>
+    <string name="learning_report">Báo cáo học tập</string>
+    <string name="recommended_activities">Hoạt động được đề xuất</string>
+</resources>

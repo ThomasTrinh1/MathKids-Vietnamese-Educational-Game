@@ -1,0 +1,19 @@
+# Audio Resource Placeholders
+# 
+# This file serves as a placeholder for audio resources.
+# In a production app, these would be actual audio files:
+#
+# - click_sound.mp3 (Button click sound effect)
+# - success_sound.mp3 (Success/correct answer sound)
+# - error_sound.mp3 (Error/wrong answer sound)
+# - celebration_sound.mp3 (Level completion celebration)
+# - background_music.mp3 (Gentle background music for children)
+#
+# For development purposes, the app will handle missing audio gracefully
+# by using system sounds or silent operation.
+#
+# To add real audio files:
+# 1. Place audio files in app/src/main/res/raw/
+# 2. Use formats: MP3, OGG, or WAV
+# 3. Keep file sizes small for mobile optimization
+# 4. Ensure audio is child-appropriate and not too loud

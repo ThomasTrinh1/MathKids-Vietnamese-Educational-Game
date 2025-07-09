@@ -1,0 +1,117 @@
+name: 🚀 Build MathKids APK
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: ☕ Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: 🐘 Setup Gradle
+      uses: gradle/gradle-build-action@v2
+      
+    - name: 📱 Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: 🧹 Clean Project
+      run: ./gradlew clean
+      
+    - name: 🔨 Build Debug APK
+      run: ./gradlew assembleDebug
+      
+    - name: 📦 Upload APK Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: mathkids-debug-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
+        retention-days: 30
+        
+    - name: 📊 Build Report
+      if: always()
+      run: |
+        echo "🎮 MathKids Build Report"
+        echo "========================"
+        if [ -f app/build/outputs/apk/debug/app-debug.apk ]; then
+          echo "✅ APK Build: SUCCESS"
+          echo "📱 APK Size: $(du -h app/build/outputs/apk/debug/app-debug.apk | cut -f1)"
+          echo "📂 APK Location: app/build/outputs/apk/debug/app-debug.apk"
+        else
+          echo "❌ APK Build: FAILED"
+        fi
+        
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: 📥 Download APK Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: mathkids-debug-apk
+        path: ./
+        
+    - name: 🏷️ Create Release Tag
+      id: tag
+      run: |
+        TAG="v$(date +'%Y.%m.%d')-build$(date +'%H%M')"
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+        
+    - name: 🚀 Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ steps.tag.outputs.tag }}
+        name: "🎮 MathKids APK - ${{ steps.tag.outputs.tag }}"
+        body: |
+          ## 🎮 MathKids - Vietnamese Educational Game
+          
+          ### 📱 APK Download
+          - **File**: `app-debug.apk`
+          - **Size**: Auto-generated
+          - **Target**: Android 5.0+ (API 21+)
+          - **Language**: Vietnamese (primary)
+          
+          ### ✨ Features
+          - 🔢 Counting module (Học đếm)
+          - ➕ Addition games (Phép cộng)
+          - ➖ Subtraction games (Phép trừ)  
+          - 🎯 Number recognition (Nhận biết số)
+          - 🏆 Achievement system (Hệ thống thưởng)
+          - 🎨 Child-friendly UI (Giao diện thân thiện)
+          
+          ### 📋 Installation
+          1. Download `app-debug.apk`
+          2. Enable "Unknown Sources" in Android settings
+          3. Install APK file
+          4. Enjoy learning math! 🎉
+          
+          ### 🔧 Build Info
+          - **Built**: ${{ github.sha }}
+          - **Date**: $(date +'%Y-%m-%d %H:%M:%S')
+          - **Branch**: ${{ github.ref_name }}
+          
+          ---
+          **Made with ❤️ for Vietnamese children**
+        files: |
+          app-debug.apk
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

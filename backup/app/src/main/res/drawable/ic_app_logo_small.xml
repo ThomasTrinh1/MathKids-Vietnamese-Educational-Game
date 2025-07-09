@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M20,3 C10.6,3 3,10.6 3,20 C3,29.4 10.6,37 20,37 C29.4,37 37,29.4 37,20 C37,10.6 29.4,3 20,3 Z" />
+    
+    <!-- Math Symbol -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M12,12 L16,12 L16,16 L20,16 L20,20 L16,20 L16,24 L12,24 L12,20 L8,20 L8,16 L12,16 Z" />
+    
+    <!-- Numbers -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M24,12 L28,12 L28,24 L24,24 Z M26,8 C27.1,8 28,8.9 28,10 C28,11.1 27.1,12 26,12 C24.9,12 24,11.1 24,10 C24,8.9 24.9,8 26,8 Z" />
+    
+</vector>

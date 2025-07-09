@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M60,10 C32.4,10 10,32.4 10,60 C10,87.6 32.4,110 60,110 C87.6,110 110,87.6 110,60 C110,32.4 87.6,10 60,10 Z" />
+    
+    <!-- Math Symbols -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M35,35 L45,35 L45,45 L55,45 L55,55 L45,55 L45,65 L35,65 L35,55 L25,55 L25,45 L35,45 Z" />
+    
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M75,45 L95,45 L95,55 L75,55 Z" />
+    
+    <!-- Numbers -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M25,75 L35,75 L35,95 L25,95 Z M30,70 C32.2,70 34,71.8 34,74 C34,76.2 32.2,78 30,78 C27.8,78 26,76.2 26,74 C26,71.8 27.8,70 30,70 Z" />
+    
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M45,75 L55,75 L55,85 L65,85 L65,95 L45,95 L45,85 L50,85 L50,75 Z M50,70 L60,70 L60,75 L50,75 Z" />
+    
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M75,75 L85,75 L85,85 L95,85 L95,95 L75,95 L75,85 L80,85 L80,75 Z M80,70 L90,70 L90,75 L80,75 Z" />
+    
+</vector>

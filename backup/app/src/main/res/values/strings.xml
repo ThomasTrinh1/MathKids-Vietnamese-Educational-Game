@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">MathKids - Learn Math Fun</string>
+    
+    <!-- Splash Screen -->
+    <string name="welcome_to_mathkids">Welcome to MathKids</string>
+    <string name="learn_math_fun">Learn math with fun!</string>
+    <string name="loading">Loading...</string>
+    
+    <!-- Main Screen -->
+    <string name="good_morning">Good Morning!</string>
+    <string name="good_afternoon">Good Afternoon!</string>
+    <string name="good_evening">Good Evening!</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="progress_format">%d%% Complete</string>
+    <string name="progress_65_percent">65% Complete</string>
+    <string name="learning_modules">Learning Modules</string>
+    <string name="progress">Progress</string>
+    <string name="achievements">Achievements</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="stars">Stars</string>
+    <string name="streak">Streak</string>
+    
+    <!-- Game Modules -->
+    <string name="module_counting">Counting</string>
+    <string name="module_counting_desc">Learn to count from 1 to 20 with fun objects</string>
+    <string name="module_addition">Addition</string>
+    <string name="module_addition_desc">Learn basic addition with visual aids</string>
+    <string name="module_subtraction">Subtraction</string>
+    <string name="module_subtraction_desc">Learn simple subtraction step by step</string>
+    <string name="module_number_recognition">Number Recognition</string>
+    <string name="module_number_recognition_desc">Recognize and write numbers from 0 to 20</string>
+    
+    <!-- Game Instructions -->
+    <string name="count_the_objects">Count the objects on screen</string>
+    <string name="choose_correct_answer">Choose the correct answer</string>
+    <string name="tap_the_number">Tap the number</string>
+    <string name="solve_the_problem">Solve the problem</string>
+    <string name="find_missing_number">Find the missing number</string>
+    
+    <!-- Feedback Messages -->
+    <string name="correct_answer">Correct! Great job!</string>
+    <string name="incorrect_answer">Not quite right. Try again!</string>
+    <string name="excellent_work">Excellent! You&apos;re amazing!</string>
+    <string name="try_again">Try again!</string>
+    <string name="well_done">Well done!</string>
+    <string name="good_job">Good job!</string>
+    <string name="keep_going">Keep going!</string>
+    <string name="amazing">Amazing!</string>
+    
+    <!-- Numbers -->
+    <string name="number_0">zero</string>
+    <string name="number_1">one</string>
+    <string name="number_2">two</string>
+    <string name="number_3">three</string>
+    <string name="number_4">four</string>
+    <string name="number_5">five</string>
+    <string name="number_6">six</string>
+    <string name="number_7">seven</string>
+    <string name="number_8">eight</string>
+    <string name="number_9">nine</string>
+    <string name="number_10">ten</string>
+    <string name="number_11">eleven</string>
+    <string name="number_12">twelve</string>
+    <string name="number_13">thirteen</string>
+    <string name="number_14">fourteen</string>
+    <string name="number_15">fifteen</string>
+    <string name="number_16">sixteen</string>
+    <string name="number_17">seventeen</string>
+    <string name="number_18">eighteen</string>
+    <string name="number_19">nineteen</string>
+    <string name="number_20">twenty</string>
+    
+    <!-- Objects -->
+    <string name="apple">apple</string>
+    <string name="star">star</string>
+    <string name="heart">heart</string>
+    <string name="circle">circle</string>
+    <string name="triangle">triangle</string>
+    <string name="square">square</string>
+    <string name="flower">flower</string>
+    <string name="balloon">balloon</string>
+    
+    <!-- Math Operations -->
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+    <string name="equals">equals</string>
+    <string name="how_much">how much</string>
+    
+    <!-- Achievements -->
+    <string name="achievement_counting_master">Counting Master</string>
+    <string name="achievement_counting_master_desc">Complete 10 counting exercises</string>
+    <string name="achievement_addition_expert">Addition Expert</string>
+    <string name="achievement_addition_expert_desc">Complete 15 addition exercises</string>
+    <string name="achievement_subtraction_star">Subtraction Star</string>
+    <string name="achievement_subtraction_star_desc">Complete 15 subtraction exercises</string>
+    <string name="achievement_number_detective">Number Detective</string>
+    <string name="achievement_number_detective_desc">Recognize 20 numbers correctly</string>
+    <string name="achievement_daily_learner">Daily Learner</string>
+    <string name="achievement_daily_learner_desc">Learn for 7 consecutive days</string>
+    
+    <!-- Settings -->
+    <string name="sound_effects">Sound Effects</string>
+    <string name="background_music">Background Music</string>
+    <string name="vibration">Vibration</string>
+    <string name="speech_rate">Speech Rate</string>
+    <string name="difficulty_level">Difficulty Level</string>
+    <string name="language">Language</string>
+    <string name="parental_controls">Parental Controls</string>
+    
+    <!-- Difficulty Levels -->
+    <string name="difficulty_very_easy">Very Easy</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    
+    <!-- Progress Screen -->
+    <string name="total_stars_earned">Total Stars Earned</string>
+    <string name="exercises_completed">Exercises Completed</string>
+    <string name="accuracy_rate">Accuracy Rate</string>
+    <string name="time_spent_learning">Time Spent Learning</string>
+    <string name="favorite_module">Favorite Module</string>
+    
+    <!-- Buttons -->
+    <string name="start">Start</string>
+    <string name="continue_game">Continue</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+    <string name="retry">Retry</string>
+    <string name="home">Home</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="hint">Hint</string>
+    
+    <!-- Dialog Messages -->
+    <string name="module_locked">This module is locked</string>
+    <string name="unlock_module_message">Complete previous modules to unlock %s</string>
+    <string name="exit_confirmation">Do you want to exit the app?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Help Instructions -->
+    <string name="help_instructions">Tap on learning modules to start. Earn stars by answering correctly!</string>
+    <string name="counting_help">Count all objects on screen and choose the correct number</string>
+    <string name="addition_help">Add two numbers together and choose the correct result</string>
+    <string name="subtraction_help">Subtract the smaller number from the larger one</string>
+    <string name="number_recognition_help">Look at the picture and choose the matching number</string>
+    
+    <!-- Time and Date -->
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="this_week">This Week</string>
+    
+    <!-- Accessibility -->
+    <string name="app_logo">App Logo</string>
+    <string name="decorative_star">Decorative Star</string>
+    <string name="decorative_heart">Decorative Heart</string>
+    <string name="decorative_circle">Decorative Circle</string>
+    
+    <!-- Error Messages -->
+    <string name="error_loading">Error loading data</string>
+    <string name="error_audio">Audio error</string>
+    <string name="error_save_progress">Cannot save progress</string>
+    
+    <!-- Congratulations -->
+    <string name="congratulations">Congratulations!</string>
+    <string name="level_completed">You completed this level!</string>
+    <string name="module_completed">You completed this module!</string>
+    <string name="new_achievement">New Achievement!</string>
+    
+    <!-- Parent Section -->
+    <string name="parent_dashboard">Parent Dashboard</string>
+    <string name="child_progress">Child Progress</string>
+    <string name="learning_report">Learning Report</string>
+    <string name="recommended_activities">Recommended Activities</string>
+
+    <!-- Missing UI Strings -->
+    <string name="score_format">Score: %d</string>
+    <string name="level_format">Level %d</string>
+    <string name="locked">Locked</string>
+    <string name="module_icon">Module Icon</string>
+    <string name="repeat_instruction">Repeat Instruction</string>
+    <string name="level">Level</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="app_logo_small">App Logo Small</string>
+    <string name="btn_circle_white">Circle Button</string>
+    <string name="locked_module">Locked Module</string>
+    <string name="star_icon">Star</string>
+    <string name="ic_chart">Chart Icon</string>
+    <string name="ic_trophy">Trophy Icon</string>
+    <string name="ic_lightbulb">Lightbulb Icon</string>
+    <string name="ic_arrow_forward">Arrow Forward</string>
+    <string name="ic_volume_up">Volume Up</string>
+    <string name="ic_level">Level Icon</string>
+    <string name="ic_fire">Fire Icon</string>
+    <string name="ic_check_circle">Check Circle</string>
+    <string name="ic_difficulty">Difficulty Icon</string>
+    <string name="ic_lock">Lock Icon</string>
+    <string name="circle_background">Circle Background</string>
+    <string name="btn_circle_primary">Primary Circle Button</string>
+    <string name="success_animation">Success Animation</string>
+    <string name="loading_animation">Loading Animation</string>
+</resources>

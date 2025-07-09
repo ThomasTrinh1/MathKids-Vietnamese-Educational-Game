@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Module Icon -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="12dp">
+
+            <!-- Background Circle -->
+            <View
+                android:id="@+id/icon_background"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/primary" />
+
+            <!-- Module Icon -->
+            <ImageView
+                android:id="@+id/iv_module_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/module_icon"
+                android:src="@drawable/ic_counting"
+                app:tint="@color/white" />
+
+            <!-- Lock Icon (for locked modules) -->
+            <ImageView
+                android:id="@+id/iv_lock_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="top|end"
+                android:contentDescription="@string/locked_module"
+                android:src="@drawable/ic_lock"
+                android:visibility="gone"
+                app:tint="@color/text_secondary" />
+
+            <!-- Stars Indicator -->
+            <LinearLayout
+                android:id="@+id/ll_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_star1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="2dp"
+                    android:contentDescription="@string/star"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/star_empty" />
+
+                <ImageView
+                    android:id="@+id/iv_star2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="2dp"
+                    android:contentDescription="@string/star"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/star_empty" />
+
+                <ImageView
+                    android:id="@+id/iv_star3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="@string/star"
+                    android:src="@drawable/ic_star"
+                    app:tint="@color/star_empty" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!-- Module Title -->
+        <TextView
+            android:id="@+id/tv_module_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/module_counting"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Module Description -->
+        <TextView
+            android:id="@+id/tv_module_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/module_counting_desc"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progress_module"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_custom" />
+
+        <!-- Module Stats -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Difficulty Level -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/difficulty"
+                    android:src="@drawable/ic_difficulty"
+                    app:tint="@color/text_tertiary" />
+
+                <TextView
+                    android:id="@+id/tv_difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/difficulty_easy"
+                    android:textColor="@color/text_tertiary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <!-- Completion Status -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/progress"
+                    android:src="@drawable/ic_check_circle"
+                    app:tint="@color/text_tertiary" />
+
+                <TextView
+                    android:id="@+id/tv_completion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="0/10"
+                    android:textColor="@color/text_tertiary"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Play Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_play"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/start"
+            android:textSize="14sp"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="18dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
