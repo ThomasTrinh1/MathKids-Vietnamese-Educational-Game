@@ -1,0 +1,22 @@
+# Lottie Animation Placeholders
+#
+# This file serves as a placeholder for Lottie animation files.
+# In a production app, these would be actual JSON animation files:
+#
+# - loading_animation.json (Loading spinner for children)
+# - success_animation.json (Celebration animation for correct answers)
+# - confetti_animation.json (Confetti effect for achievements)
+# - star_animation.json (Star collection animation)
+#
+# For development purposes, the app will handle missing animations gracefully
+# by using simple fade/scale animations or hiding the animation views.
+#
+# To add real Lottie animations:
+# 1. Download animations from LottieFiles.com
+# 2. Place JSON files in app/src/main/res/raw/
+# 3. Ensure animations are child-friendly and colorful
+# 4. Keep file sizes reasonable for mobile performance
+#
+# Free child-friendly animations can be found at:
+# - https://lottiefiles.com/featured
+# - Search for: celebration, confetti, stars, loading, kids
