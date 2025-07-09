@@ -43,7 +43,7 @@
     <!-- Feedback Messages -->
     <string name="correct_answer">Correct! Great job!</string>
     <string name="incorrect_answer">Not quite right. Try again!</string>
-    <string name="excellent_work">Excellent! You&apos;re amazing!</string>
+    <string name="excellent_work">Excellent! You\'re amazing!</string>
     <string name="try_again">Try again!</string>
     <string name="well_done">Well done!</string>
     <string name="good_job">Good job!</string>
