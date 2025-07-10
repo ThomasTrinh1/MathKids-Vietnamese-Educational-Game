@@ -29,23 +29,23 @@ interface ProgressDao {
     suspend fun deleteProgress(progress: ProgressEntity): Int
 
     @Query("DELETE FROM progress WHERE moduleId = :moduleId")
-    suspend fun deleteProgressByModule(moduleId: String)
+    suspend fun deleteProgressByModule(moduleId: String): Int
 
     @Query("SELECT SUM(starsEarned) FROM progress")
-    suspend fun getTotalStars(): Int
+    suspend fun getTotalStars(): Int?
 
     @Query("SELECT SUM(completedExercises) FROM progress")
-    suspend fun getTotalCompletedExercises(): Int
+    suspend fun getTotalCompletedExercises(): Int?
 
     @Query("SELECT AVG(accuracy) FROM progress WHERE completedExercises > 0")
-    suspend fun getAverageAccuracy(): Float
+    suspend fun getAverageAccuracy(): Float?
 
     @Query("SELECT * FROM progress WHERE isCompleted = 1")
     suspend fun getCompletedModules(): List<ProgressEntity>
 
     @Query("UPDATE progress SET starsEarned = starsEarned + :stars WHERE moduleId = :moduleId")
-    suspend fun addStars(moduleId: String, stars: Int)
+    suspend fun addStars(moduleId: String, stars: Int): Int
 
     @Query("UPDATE progress SET completedExercises = completedExercises + 1 WHERE moduleId = :moduleId")
-    suspend fun incrementCompletedExercises(moduleId: String)
+    suspend fun incrementCompletedExercises(moduleId: String): Int
 }

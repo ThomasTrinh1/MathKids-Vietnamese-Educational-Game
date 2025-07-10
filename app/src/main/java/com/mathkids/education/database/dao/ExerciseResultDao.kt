@@ -32,7 +32,7 @@ interface ExerciseResultDao {
     suspend fun deleteResult(result: ExerciseResultEntity): Int
 
     @Query("DELETE FROM exercise_results WHERE moduleId = :moduleId")
-    suspend fun deleteResultsByModule(moduleId: String)
+    suspend fun deleteResultsByModule(moduleId: String): Int
 
     @Query("SELECT COUNT(*) FROM exercise_results WHERE moduleId = :moduleId AND isCorrect = 1")
     suspend fun getCorrectAnswersCount(moduleId: String): Int
@@ -41,7 +41,7 @@ interface ExerciseResultDao {
     suspend fun getTotalAnswersCount(moduleId: String): Int
 
     @Query("SELECT AVG(timeSpent) FROM exercise_results WHERE moduleId = :moduleId AND isCorrect = 1")
-    suspend fun getAverageTimeSpent(moduleId: String): Long
+    suspend fun getAverageTimeSpent(moduleId: String): Long?
 
     @Query("SELECT * FROM exercise_results WHERE timestamp >= :startTime ORDER BY timestamp DESC")
     suspend fun getResultsSince(startTime: Long): List<ExerciseResultEntity>

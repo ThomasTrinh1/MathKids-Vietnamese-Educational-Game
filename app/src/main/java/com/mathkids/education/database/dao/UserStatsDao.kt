@@ -23,32 +23,32 @@ interface UserStatsDao {
     suspend fun updateUserStats(userStats: UserStatsEntity): Int
 
     @Query("UPDATE user_stats SET totalStars = totalStars + :stars WHERE id = 1")
-    suspend fun addStars(stars: Int)
+    suspend fun addStars(stars: Int): Int
 
     @Query("UPDATE user_stats SET totalExercises = totalExercises + 1 WHERE id = 1")
-    suspend fun incrementTotalExercises()
+    suspend fun incrementTotalExercises(): Int
 
     @Query("UPDATE user_stats SET correctAnswers = correctAnswers + 1 WHERE id = 1")
-    suspend fun incrementCorrectAnswers()
+    suspend fun incrementCorrectAnswers(): Int
 
     @Query("UPDATE user_stats SET totalPlayTime = totalPlayTime + :playTime WHERE id = 1")
-    suspend fun addPlayTime(playTime: Long)
+    suspend fun addPlayTime(playTime: Long): Int
 
     @Query("UPDATE user_stats SET dailyStreak = :streak WHERE id = 1")
-    suspend fun updateDailyStreak(streak: Int)
+    suspend fun updateDailyStreak(streak: Int): Int
 
     @Query("UPDATE user_stats SET longestStreak = :streak WHERE id = 1")
-    suspend fun updateLongestStreak(streak: Int)
+    suspend fun updateLongestStreak(streak: Int): Int
 
     @Query("UPDATE user_stats SET favoriteModule = :moduleId WHERE id = 1")
-    suspend fun updateFavoriteModule(moduleId: String)
+    suspend fun updateFavoriteModule(moduleId: String): Int
 
     @Query("UPDATE user_stats SET averageAccuracy = :accuracy WHERE id = 1")
-    suspend fun updateAverageAccuracy(accuracy: Float)
+    suspend fun updateAverageAccuracy(accuracy: Float): Int
 
     @Query("UPDATE user_stats SET lastPlayDate = :date WHERE id = 1")
-    suspend fun updateLastPlayDate(date: Long)
+    suspend fun updateLastPlayDate(date: Long): Int
 
     @Query("UPDATE user_stats SET totalDaysPlayed = totalDaysPlayed + 1 WHERE id = 1")
-    suspend fun incrementTotalDaysPlayed()
+    suspend fun incrementTotalDaysPlayed(): Int
 }

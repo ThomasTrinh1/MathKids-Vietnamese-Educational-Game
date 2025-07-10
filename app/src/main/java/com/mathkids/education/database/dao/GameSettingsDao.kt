@@ -23,32 +23,32 @@ interface GameSettingsDao {
     suspend fun updateGameSettings(settings: GameSettingsEntity): Int
 
     @Query("UPDATE game_settings SET soundEnabled = :enabled WHERE id = 1")
-    suspend fun updateSoundEnabled(enabled: Boolean)
+    suspend fun updateSoundEnabled(enabled: Boolean): Int
 
     @Query("UPDATE game_settings SET musicEnabled = :enabled WHERE id = 1")
-    suspend fun updateMusicEnabled(enabled: Boolean)
+    suspend fun updateMusicEnabled(enabled: Boolean): Int
 
     @Query("UPDATE game_settings SET vibrateEnabled = :enabled WHERE id = 1")
-    suspend fun updateVibrateEnabled(enabled: Boolean)
+    suspend fun updateVibrateEnabled(enabled: Boolean): Int
 
     @Query("UPDATE game_settings SET speechRate = :rate WHERE id = 1")
-    suspend fun updateSpeechRate(rate: Float)
+    suspend fun updateSpeechRate(rate: Float): Int
 
     @Query("UPDATE game_settings SET speechPitch = :pitch WHERE id = 1")
-    suspend fun updateSpeechPitch(pitch: Float)
+    suspend fun updateSpeechPitch(pitch: Float): Int
 
     @Query("UPDATE game_settings SET difficultyLevel = :level WHERE id = 1")
-    suspend fun updateDifficultyLevel(level: Int)
+    suspend fun updateDifficultyLevel(level: Int): Int
 
     @Query("UPDATE game_settings SET language = :language WHERE id = 1")
-    suspend fun updateLanguage(language: String)
+    suspend fun updateLanguage(language: String): Int
 
     @Query("UPDATE game_settings SET parentalControlsEnabled = :enabled WHERE id = 1")
-    suspend fun updateParentalControlsEnabled(enabled: Boolean)
+    suspend fun updateParentalControlsEnabled(enabled: Boolean): Int
 
     @Query("UPDATE game_settings SET maxPlayTimeMinutes = :minutes WHERE id = 1")
-    suspend fun updateMaxPlayTimeMinutes(minutes: Int)
+    suspend fun updateMaxPlayTimeMinutes(minutes: Int): Int
 
     @Query("UPDATE game_settings SET isFirstLaunch = :isFirst WHERE id = 1")
-    suspend fun updateFirstLaunch(isFirst: Boolean)
+    suspend fun updateFirstLaunch(isFirst: Boolean): Int
 }
