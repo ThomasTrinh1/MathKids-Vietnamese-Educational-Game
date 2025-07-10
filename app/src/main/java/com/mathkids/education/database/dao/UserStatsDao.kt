@@ -17,10 +17,10 @@ interface UserStatsDao {
     suspend fun getUserStatsSync(): UserStatsEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertUserStats(userStats: UserStatsEntity)
+    suspend fun insertUserStats(userStats: UserStatsEntity): Long
 
     @Update
-    suspend fun updateUserStats(userStats: UserStatsEntity)
+    suspend fun updateUserStats(userStats: UserStatsEntity): Int
 
     @Query("UPDATE user_stats SET totalStars = totalStars + :stars WHERE id = 1")
     suspend fun addStars(stars: Int)

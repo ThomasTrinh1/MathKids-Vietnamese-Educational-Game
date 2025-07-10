@@ -20,13 +20,13 @@ interface ProgressDao {
     suspend fun getProgressByModuleSync(moduleId: String): ProgressEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertProgress(progress: ProgressEntity)
+    suspend fun insertProgress(progress: ProgressEntity): Long
 
     @Update
-    suspend fun updateProgress(progress: ProgressEntity)
+    suspend fun updateProgress(progress: ProgressEntity): Int
 
     @Delete
-    suspend fun deleteProgress(progress: ProgressEntity)
+    suspend fun deleteProgress(progress: ProgressEntity): Int
 
     @Query("DELETE FROM progress WHERE moduleId = :moduleId")
     suspend fun deleteProgressByModule(moduleId: String)

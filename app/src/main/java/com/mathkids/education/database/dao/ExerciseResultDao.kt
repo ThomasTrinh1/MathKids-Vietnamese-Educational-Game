@@ -20,16 +20,16 @@ interface ExerciseResultDao {
     suspend fun getResultsByExercise(exerciseId: String): List<ExerciseResultEntity>
 
     @Insert
-    suspend fun insertResult(result: ExerciseResultEntity)
+    suspend fun insertResult(result: ExerciseResultEntity): Long
 
     @Insert
-    suspend fun insertResults(results: List<ExerciseResultEntity>)
+    suspend fun insertResults(results: List<ExerciseResultEntity>): List<Long>
 
     @Update
-    suspend fun updateResult(result: ExerciseResultEntity)
+    suspend fun updateResult(result: ExerciseResultEntity): Int
 
     @Delete
-    suspend fun deleteResult(result: ExerciseResultEntity)
+    suspend fun deleteResult(result: ExerciseResultEntity): Int
 
     @Query("DELETE FROM exercise_results WHERE moduleId = :moduleId")
     suspend fun deleteResultsByModule(moduleId: String)

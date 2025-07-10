@@ -23,16 +23,16 @@ interface AchievementDao {
     fun getLockedAchievements(): LiveData<List<AchievementEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAchievement(achievement: AchievementEntity)
+    suspend fun insertAchievement(achievement: AchievementEntity): Long
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAchievements(achievements: List<AchievementEntity>)
+    suspend fun insertAchievements(achievements: List<AchievementEntity>): List<Long>
 
     @Update
-    suspend fun updateAchievement(achievement: AchievementEntity)
+    suspend fun updateAchievement(achievement: AchievementEntity): Int
 
     @Delete
-    suspend fun deleteAchievement(achievement: AchievementEntity)
+    suspend fun deleteAchievement(achievement: AchievementEntity): Int
 
     @Query("UPDATE achievements SET currentProgress = :progress WHERE id = :achievementId")
     suspend fun updateProgress(achievementId: String, progress: Int)

@@ -17,10 +17,10 @@ interface GameSettingsDao {
     suspend fun getGameSettingsSync(): GameSettingsEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertGameSettings(settings: GameSettingsEntity)
+    suspend fun insertGameSettings(settings: GameSettingsEntity): Long
 
     @Update
-    suspend fun updateGameSettings(settings: GameSettingsEntity)
+    suspend fun updateGameSettings(settings: GameSettingsEntity): Int
 
     @Query("UPDATE game_settings SET soundEnabled = :enabled WHERE id = 1")
     suspend fun updateSoundEnabled(enabled: Boolean)
