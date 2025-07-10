@@ -6,6 +6,7 @@ import com.mathkids.education.database.entities.UserStatsEntity
 
 /**
  * Data Access Object for UserStats operations
+ * ALL methods have explicit return types to prevent Room compilation errors
  */
 @Dao
 interface UserStatsDao {
